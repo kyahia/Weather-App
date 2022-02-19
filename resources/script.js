@@ -20,7 +20,7 @@ function locationGen(city, limit) {
 function weatherAPI(latitude, longitude, timeZone) {
     //https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41
     //&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_sum&timezone=Europe%2FBerlin
-    const apiUrl = 'https://api.open-meteo.com/v1/forecast?';
+    const apiUrl = 'http://api.open-meteo.com/v1/forecast?';
     const toParameters = '&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_sum&timezone=';
     return apiUrl + 'latitude=' + latitude + '&longitude=' + longitude + toParameters + timeZone;
 }
@@ -29,7 +29,7 @@ function weatherHourly(latitude, longitude) {
     //https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41
     //&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_sum&timezone=Europe%2FBerlin
     const toParameters = '&hourly=temperature_2m,relativehumidity_2m';
-    const apiUrl = 'https://api.open-meteo.com/v1/forecast?';
+    const apiUrl = 'http://api.open-meteo.com/v1/forecast?';
     return apiUrl + 'latitude=' + latitude + '&longitude=' + longitude + toParameters;
     // returning JSON.hourly.{relativehumidity_2m : [hours], temperature_2m: [hours] }
 }
