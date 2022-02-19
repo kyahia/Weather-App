@@ -1,0 +1,39 @@
+header{
+    background-color: gainsboro;
+    border-style: outset;
+    padding: 0.5em;
+    text-align: right;
+}
+
+.loading{
+    text-align: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content:center;
+    gap: 2rem;
+
+    --cold-color: lightblue;
+    --warm-color: greenyellow;
+    --hot-color: orange;
+}
+
+h1, h2{
+    margin-top: 0;
+}
+
+ul{
+    padding: 1rem;
+}
+
+ul.cold{
+    box-shadow: .5rem 0.5rem 5px 0 var(--cold-color);
+}
+ul.warm{
+    box-shadow: .5rem 0.5rem 5px 0 var(--warm-color);
+}
+ul.hot{
+    box-shadow: .5rem 0.5rem 5px 0 var(--hot-color);
+}
