@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Weather app</title>
+   <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+   <header>
+      <form>
+         <p>
+            <label for="location-input">City</label>
+            <input type="search" id="location-input" value="Oran" placeholder="City" required>
+         </p>
+         <p>
+            <label for="limit"">Limit</label>
+            <input type="number" id="limit" value="3" min="1" max="5">
+         </p>
+         <p>
+            <label for="timezone">Time Zone</label>
+            <select name="timezone" id="timezone"></select>
+         </p>
+         <p>
+            <button type="submit">Get Data</button>
+         </p>
+      </form>
+   </header>
+
+   <div class="loading">
+      <h1></h1>
+   </div>
+
+   <main>
+   </main>
+
+   <script src="./code.js"></script>
+</body>
+
+</html>

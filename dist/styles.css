@@ -1,0 +1,71 @@
+header{
+    background-color: gainsboro;
+    border-style: outset;
+    padding: 0.5em;
+    text-align: right;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    row-gap: .25rem;
+}
+
+input{
+    max-width: 15ch;
+}input[type="number"]{
+    width: 3ch;
+}
+
+p{
+    margin: 0 .5rem;
+    text-align: right;
+}
+
+.loading{
+    text-align: center;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content:center;
+    gap: 2rem;
+
+}
+
+h1, h2{
+    margin-top: 0;
+}
+
+main div h1{
+    height: 5ch;
+    overflow: auto;
+}
+
+main div{
+    padding: 1rem;
+    animation: shadowing infinite;
+}
+
+.cold{
+    animation-duration: 2s;
+    --w-color: lightblue;
+}
+.warm{
+    animation-duration: 1.5s;
+    --w-color: greenyellow;
+}
+.hot{
+    animation-duration: 1s;
+    --w-color: yellow;
+}
+
+@keyframes shadowing {
+    from{
+        box-shadow: none;
+    } to {
+    box-shadow: .5rem 0.5rem 5px 0 var(--w-color);
+    }
+}

@@ -1,1 +1,2 @@
-resources/test*
+dist/test*
+node_modules

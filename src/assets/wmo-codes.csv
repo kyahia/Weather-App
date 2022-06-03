@@ -1,0 +1,28 @@
+0,clear sky
+1,mainly clear
+2,Mainly clear
+3,overcast
+45,fog
+48,rime fog
+51,light Drizzle
+53,moderate Drizzle
+55,dense Drizzle
+56,light freezing drizzle
+57,dense freezing drizzl
+61,slight rain
+63,moderate rain
+65,heavy rain
+66,light freezing rain
+67,heavy freezing rain
+71,slight snow fall
+73,moderate snow fall
+75,heavy snow fall
+77,snow grains
+80,slight rain shower
+81,moderate rain shower
+82,violent rain shower
+85,slight snow shower
+86,heavy snow shower
+95,thunderstorm
+96,thunderstorm with slight hail
+99,thunderstorm with heavy hail
